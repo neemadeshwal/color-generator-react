@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-color: whitesmoke;
+}
+.Color-container {
+  margin: 2rem 2rem;
+}
+.color-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.colors {
+  height: 80vh;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(96px, 1fr));
+}
+.single-color {
+}
+form {
+  display: flex;
+  align-items: center;
+}
+.color-heading h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.input-color {
+  border: 0;
+  background-color: white;
+  height: 2.5rem;
+}
+
+input[type="text"] {
+  padding: 0.74rem;
+  border: 0;
+  /* border:3px solid red; */
+}
+
+input.error {
+  border: 2.5px solid rgb(250, 51, 16);
+  border-radius: 4px;
+}
+.submit-btn {
+  background-color: black;
+  padding: 8px 1.2rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
